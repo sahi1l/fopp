@@ -329,7 +329,7 @@ See if you can get this program to run successfully:
 .. activecode:: ac4_7_5
 
     str_time = input("What time is it now?")
-    str_wait_time = input("What is the number of nours to wait?")
+    str_wait_time = input("What is the number of hours to wait?")
     time = int(str_time)
     wai_time = int(str_wait_time)
 
@@ -371,12 +371,13 @@ Here is another one for you to try:
 
 .. activecode:: ac4_7_6
 
-    n = input("What time is it now (in hours)?")
-    n = imt(n)
-    m = input("How many hours do you want to wait?")
-    m = int(m)
-    q = m % 12
-    print("The time is now", q)
+	n = input("What time is it now (in hours)?")
+	n = imt(n)
+	m = input("How many hours do you want to wait?")
+	m = int(m)
+	sum_time = n + m
+	time_of_day = sum_time % 12
+	print("The time is now", time_of_day)
 
 
 .. reveal:: db_ex6_reveal

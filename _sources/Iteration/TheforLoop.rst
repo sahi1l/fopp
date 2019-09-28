@@ -11,31 +11,32 @@
    :prefix: iter-2-
    :start: 1
 
-.. index:: for loop, iteration, body 
+.. index:: for loop, iteration, body
    loop; for
 
 The **for** Loop
 ----------------
 
-.. video:: forloopvid
-   :controls:
-   :thumb: ../_static/for_loop.png
+.. youtube:: X1-UNHUajfk
+    :divid: forloopvid
+    :height: 315
+    :width: 560
+    :align: left
 
-   http://media.interactivepython.org/thinkcsVideos/for_loop.mov
-   http://media.interactivepython.org/thinkcsVideos/for_loop.webm
 
+.. xGSfiZt5cdw   -- this was the old one.
 
-Back when we drew the images with turtle it could be quite tedious. If we wanted to draw a square 
-then we had to move then turn, move then turn, etc. etc. four times. If we were drawing a hexagon, 
+Back when we drew the images with turtle it could be quite tedious. If we wanted to draw a square
+then we had to move then turn, move then turn, etc. etc. four times. If we were drawing a hexagon,
 or an octagon, or a polygon with 42 sides, it would have been a nightmare to duplicate all that code.
 
-A basic building block of all programs is to be able to repeat some code over and over again. We 
-refer to this repetitive idea as **iteration**. In this section, we will explore some mechanisms for 
+A basic building block of all programs is to be able to repeat some code over and over again. We
+refer to this repetitive idea as **iteration**. In this section, we will explore some mechanisms for
 basic iteration.
 
-In Python, the **for** statement allows us to write programs that implement iteration. As a simple 
-example, let's say we have some friends, and we'd like to send them each an email inviting them to 
-our party. We don't quite know how to send email yet, so for the moment we'll just print a message 
+In Python, the **for** statement allows us to write programs that implement iteration. As a simple
+example, let's say we have some friends, and we'd like to send them each an email inviting them to
+our party. We don't quite know how to send email yet, so for the moment we'll just print a message
 for each friend.
 
 .. activecode:: ac6_2_1
@@ -46,11 +47,11 @@ for each friend.
         print("Hi", name, "Please come to my party on Saturday!")
 
 
-Take a look at the output produced when you press the ``run`` button. There is one line printed for 
+Take a look at the output produced when you press the ``run`` button. There is one line printed for
 each friend. Here's how it works:
 
 
-* **name** in this ``for`` statement is called the **loop variable**.
+* **name** in this ``for`` statement is called the **loop variable** or, alternatively, the **iterator variable**.
 * The list of names in the square brackets is the sequence over which we will iterate.
 * Line 2  is the **loop body**.  The loop body is always
   indented. The indentation determines exactly what statements are "in the
@@ -65,3 +66,10 @@ each friend. Here's how it works:
   friend.
 * At the end of each execution of the body of the loop, Python returns
   to the ``for`` statement, to see if there are more items to be handled.
+
+
+The overall syntax is ``for <loop_var_name> in <sequence>:``
+
+* Between the words for and in, there must be a variable name for the loop variable. You can't put a whole expression there.
+* A colon is required at the end of the line
+* After the word in and before the colon is an expression that must evaluate to a sequence (e.g, a string or a list or a tuple). It could be a literal, or a variable name, or a more complex expression.

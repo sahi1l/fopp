@@ -13,11 +13,11 @@
 👩‍💻 Keeping Track of Your Iterator Variable and Your Iterable
 ===============================================================
 
-When students first begin using for loops, they sometimes have difficulty understanding the difference between the iterator variable and the iterable. 
+When students first begin using for loops, they sometimes have difficulty understanding the difference between the iterator variable (the loop variable) and the iterable.
 
 The iterable is the object that you will parsing through in a for loop. Generally, this object does not change while the for loop is being executed.
 
-The iterator variable is the variable which stores a portion of the iterable when the for loop is being executed. Each time the loop iterates, the value of the iterator variable will change to a different portion of the iterable.  
+The iterator (loop) variable is the variable which stores a portion of the iterable when the for loop is being executed. Each time the loop iterates, the value of the iterator variable will change to a different portion of the iterable.
 
 .. mchoice:: question6_100_1
    :answer_a: string
@@ -115,11 +115,12 @@ The iterator variable is the variable which stores a portion of the iterable whe
    :answer_b: list
    :answer_c: tuple
    :answer_d: iterable
-   :answer_e: error, unable to iterate over the object. 
-   :feedback_a: 
-   :feedback_b: 
-   :feedback_c: 
-   :feedback_d: 
+   :answer_e: error, unable to iterate over the object.
+   :feedback_a: Correct! The iterable is a string.
+   :feedback_b: Incorrect, there is no list in the code.
+   :feedback_c: Incorrect, the iterable is not a tuple.
+   :feedback_d: Incorrect, that is not the best answer for this problem.
+   :feedback_e: Incorrect, Python can iterate over this type.
    :correct: a
    :practice: T
 
